@@ -3,8 +3,15 @@
 * {
 box-sizing: border-box;
 }
+body{
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    padding: 70px 20px;
+}
 
-body {
+.box {
 margin: 0;
 color: #FDF9F8;
 /* height: 100vh; */
@@ -27,35 +34,33 @@ flex-flow: row wrap;
 justify-content: space-between;
 }
 
-.left{
+section{
 display: flex;
 flex-flow: column wrap;
 align-items: flex-start;
 justify-content: center;
+
+}
+.left{
+    width: 42%;
 }
 
-.box1 {
-width: 42%;
-}
-
-.box2 {
+.right {
 width: 48%;
 align-self: flex-start;
 }
+.corners{
+    border-radius: 0.4rem;
+}
 
-.btn-1{
-border-radius: 0.4rem;
-background-color: #5e54a2;
-color: #FDF9F8;
-margin: 250px;
-padding:20px;
-text-align: center;
-text-decoration: none;
+a {
+    text-decoration: none;
+    text-align: center;
 }
 
 
 
-.box2>a {
+.right>a {
 background-color: hsl(248, 32%, 49%);
 color: inherit;
 padding: 15px 10px;
@@ -66,7 +71,7 @@ box-shadow: 0px 0.4em rgb(219, 112, 112);
 
 }
 
-.box2 form {
+.right form {
 background-color: #FFFFFF;
 width: 100%;
 margin-top: 20px;
@@ -74,15 +79,15 @@ margin-bottom: 20px;
 padding: 35px;
 }
 
-.box2 form>div {
+.right form>div {
 margin-bottom: 20px;
 }
 
-.box2 form p {
+.right form p {
 color: hsl(246, 25%, 77%);
 }
 
-.box2 form p .term {
+.right form p .term {
 color: hsl(0, 100%, 74%);
 font-weight: 600;
 }
@@ -104,17 +109,15 @@ border-color: hsl(246, 25%, 77%);
 }
 
 input:not(input[type="submit"]):required:valid{
-border: 1.7px solid rgb(233, 230, 230);
+border: 1.7px solid rgb(136, 136, 136);
 }
 
-input:not(input[type="submit"]):required:invalid + span.error{ 
-display: block;
-}
+
 
 input:not(input[type="submit"]):required:invalid{
-border: 1.5px solid hsl(0, 100%, 74%);
+border: 1.5px solid hsl(0, 1%, 83%);
 padding-right: 40px;
-background-image: url('./images/icon-error.svg');
+
 background-position: 94% center;
 background-repeat: no-repeat;
 
@@ -139,9 +142,6 @@ div.action {
 margin-bottom: 10px !important;
 }
 
-.box2>a>span {
-font-size: 0.9rem;
-}
 
 section>h1 {
 margin: 0;
@@ -164,7 +164,7 @@ line-height: 1.4rem;
 
 
 @media only screen and (max-width: 375px) {
-body{
+.box{
 background-image: url('./images/bg-intro-mobile.png');
 }
 main,
@@ -176,7 +176,7 @@ main {
 padding: 8rem 15px;
 }
 
-.box2 form {
+.rightform {
 padding: 20px;
 }
 
@@ -190,7 +190,7 @@ font-weight: 600;
 font-size: 1.6rem;
 }
 
-.box1 {
+.left {
 text-align: center;
 align-items: center;
 justify-content: center;
@@ -207,11 +207,11 @@ section {
 width: 100%;
 }
 
-.box2 form {
+.right form {
 padding: 20px;
 }
 
-.box1 {
+.left {
 text-align: center;
 align-items: center;
 justify-content: center;
