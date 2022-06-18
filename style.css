@@ -47,7 +47,7 @@ justify-content: center;
 
 .right {
 width: 48%;
-align-self: flex-start;
+
 }
 .corners{
     border-radius: 0.4rem;
@@ -57,7 +57,6 @@ a {
     text-decoration: none;
     text-align: center;
 }
-
 
 
 .right>a {
@@ -96,9 +95,9 @@ input:not(input[type="submit"]) {
 font-size: 0.96rem;
 width: 100%;
 padding: 15px 15px 15px 26px;
-color: rgb(29, 7, 42);
+color: rgb(54, 8, 54);
 outline: unset;
-border: 1.7px solid rgb(233, 230, 230);
+border: 5px solid rgb(233, 230, 230);
 font-weight: 700;
 
 border-radius: 5px;
@@ -163,74 +162,49 @@ line-height: 1.4rem;
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
 .box{
 background-image: url('./images/bg-intro-mobile.png');
+margin: 10% auto;
 }
-main,
-section {
-width: 100%;
-}
-
-main {
-padding: 8rem 15px;
-}
-
-.rightform {
-padding: 20px;
-}
-
-section>p {
-font-size: .9rem;
-line-height: 1.6rem;
-}
-
-section>h1 {
-font-weight: 600;
-font-size: 1.6rem;
-}
-
-.left {
-text-align: center;
-align-items: center;
-justify-content: center;
-}
+.left{
+    text-align: center;
+    justify-items: center;
 
 }
-
-
-@media only screen and (min-width: 376px) and (max-width: 767px) {
-main {
-width: 88%;
+.left h1{
+    font-size: 1.8rem;
+    text-align: center;
+    justify-items: center;
 }
-section {
-width: 100%;
-}
+.left p{
+    text-align: center;
+    margin-bottom: 70px;
+    justify-items: center;
 
-.right form {
-padding: 20px;
 }
-
-.left {
-text-align: center;
-align-items: center;
-justify-content: center;
+main{
+    flex-direction: column;
 }
-
-section>p {
-color: #FDF9F8;
-font-size: 1.1rem;
-line-height: 1.6rem;
+.right{
+    text-align: center;
+    font-size: 8px;
+    width: auto;
+    align-content: center;
+    justify-items: center;
 }
+input[type="submit"] {
 
-section form p {
-font-size: .9rem;
-}
 
-section>h1 {
-font-weight: 700;
-line-height: 2.2rem;
-font-size: 1.5rem;
-}
-
+    border: unset;
+    padding: 15px 5px;
+    font-size: 8px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0px .2em rgb(93, 154, 126);
+    
+    }
+    
 }
